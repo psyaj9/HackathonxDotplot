@@ -10,12 +10,15 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: rgb(200, 253, 249);
+    background-image: url(background3.webp);
+    background-size: cover;
 }
 
 .wrapper {
     width: 420px;
-    background-color: rgb(164, 228, 240);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     color: #277988;
     border-radius: 10px;
     padding: 30px 40px;

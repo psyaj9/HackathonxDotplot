@@ -1,0 +1,52 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+from PIL import Image
+import numpy as np
+
+df = pd.read_csv('Clara Grey (Malignant).csv')
+
+# Ensure the CSV contains the specified 'x column' and 'y column' columns
+if 'x' not in df.columns or 'y' not in df.columns:
+    raise ValueError("CSV file must contain 'x' and 'y' columns")
+
+x_labels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+y_labels = ['4', '3', '2', '1']
+
+df['x_num'] = df['x'].apply(lambda x: x_labels.index(x))
+df['y_num'] = df['y'].apply(lambda y: y_labels.index(str(y)))
+
+img = Image.open('coordinates.png')
+img_width, img_height = img.size
+
+bbox_left = 418
+bbox_right = 1028
+bbox_bottom = 390
+bbox_top = 690
+
+fig, ax = plt.subplots(figsize=(15.1, 15.82))
+ax.imshow(img, extent=[0, img_width, 0, img_height])
+
+x_extent = [bbox_left, bbox_right]
+y_extent = [bbox_bottom, bbox_top]
+
+ax.scatter(
+    np.interp(df['x_num'], [0, len(x_labels) - 1], x_extent),
+    np.interp(df['y_num'], [0, len(y_labels) - 1], y_extent),
+    c='red', marker='o'
+)
+ax.set_xlim(0, img_width)
+ax.set_ylim(0, img_height)
+
+ax.set_xticks(np.linspace(bbox_left, bbox_right, len(x_labels)))
+ax.set_xticklabels(x_labels)
+ax.set_yticks(np.linspace(bbox_bottom, bbox_top, len(y_labels)))
+ax.set_yticklabels(y_labels)
+
+ax.grid(True, which='both', axis='both', linestyle='--', linewidth=0.5, color='gray')
+
+ax.set_title('Lesion Coordinates on Clara Gray')
+ax.set_xlabel('X Coordinate (A to H)')
+ax.set_ylabel('Y Coordinate (4 to 1)')
+
+plt.savefig('Clara_Grey.png', bbox_inches='tight', pad_inches=0.1)
+plt.show()

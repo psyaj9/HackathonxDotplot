@@ -14,7 +14,7 @@ We created a desktop applicaton desinged for hospital staff to efficiently manag
 
 ### User-Friendly Desktop Framework
 * **Desktop Application:** Developed for ease of use by hospital staff
-* **Forms and GUI:** Provides intutive forms and a clean interface tailord for desktop usage
+* **Forms and GUI:** Provides intutive forms and a clean interface tailored for desktop usage
 
 ## Languages Used
 * HTML

@@ -1,4 +1,11 @@
-# HackathonxDotplot
+# TechAcadameiaXDotplot Hackathon
+
+## Overview
+We created a desktop applicaton desinged for hospital staff to efficiently manage patient data and visualize their breast lesions. It combines robust data management with intuitive visualization tools to support doctors in diagnoising and monitoring patients.
+
+## Key features
+###
+
 
 ![login page](https://github.com/user-attachments/assets/2e491212-de44-435f-9404-a3b41ccd0224)
 

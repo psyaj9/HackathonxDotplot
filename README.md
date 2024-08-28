@@ -33,7 +33,7 @@ We created a desktop applicaton desinged for hospital staff to efficiently manag
 * Link searched patient to information database through a search system. 
 * Patient information i.e., Patient ID, Age, Height, Weight, and linked Ultrasound Scan, with Ultrasound Scan ID. 
 
-![Search   display and database](https://github.com/user-attachments/assets/29dcdabe-6d00-4cf1-a609-b17ffe38a6c5)
+![information database](https://github.com/user-attachments/assets/c96f6587-df83-4c30-9b7a-a4ce0ec669cd)
 
 ### Co-ordinates
 * Approximate Location of the  Ultrasound Scan lesion with coordinates  on torso. Link the  Ultrasound scan image, and patient database  to the approximated location image.

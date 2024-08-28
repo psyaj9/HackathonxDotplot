@@ -25,7 +25,7 @@ We created a desktop applicaton desinged for hospital staff to efficiently manag
 ## Key features
 
 ### Login Page
-* Allows users to access patient’s information using  patient’s name and ultrasound scan ID.
+* Allows users to access patient’s information
   
 ![login page](https://github.com/user-attachments/assets/2e491212-de44-435f-9404-a3b41ccd0224)
 

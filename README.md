@@ -38,4 +38,4 @@ We created a desktop applicaton desinged for hospital staff to efficiently manag
 ### Co-ordinates
 * Approximate Location of the  Ultrasound Scan lesion with coordinates  on torso. Link the  Ultrasound scan image, and patient database  to the approximated location image.
 
-![co-ordinates](https://github.com/user-attachments/assets/eb04719e-a6b7-45c7-876c-6607ca60c394)
+![co-ordinates](https://github.com/user-attachments/assets/4355fe1f-cf5b-482e-958b-f49d8e77fae3)
